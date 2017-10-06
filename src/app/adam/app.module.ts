@@ -3,7 +3,10 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from "@angular/forms";
 
 import { AppComponent } from './app.component';
-import { PaneauModule as PaneauModule } from '../adam/Paneau/paneau.module';
+
+import { PaneauModuleTest } from './Paneau/paneau.module';
+
+// import { PaneauModule as PaneauModule } from '../base/Paneau/paneau.module';
 
 
 @NgModule({
@@ -11,7 +14,7 @@ import { PaneauModule as PaneauModule } from '../adam/Paneau/paneau.module';
     AppComponent
   ],
   imports: [
-    BrowserModule,FormsModule,PaneauModule
+    BrowserModule,FormsModule,PaneauModuleTest,
   ],
   providers: [],
   bootstrap: [AppComponent]

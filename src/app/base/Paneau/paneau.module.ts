@@ -3,11 +3,16 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from "@angular/forms";
 
 
-import {paneauInfoComponent,listComponent} from '../import/impot.moduleOpen';
+import {paneauInfoComponent,listComponent} from "../import/import.moduleOpen";
+
+import {CommentaireModule} from "./Commentaire/commentaire.module";
+import {InfoModule} from "./Info/info.module";
+import {PartageModule} from "./Partage/partage.module";
+
 
 @NgModule({
   imports: [
-    BrowserModule,FormsModule,
+    BrowserModule,FormsModule,CommentaireModule,InfoModule,PartageModule
   ],
   declarations: [
     listComponent,paneauInfoComponent
@@ -15,7 +20,7 @@ import {paneauInfoComponent,listComponent} from '../import/impot.moduleOpen';
 
   providers: [],
   exports:[
-    paneauInfoComponent,listComponent
+    paneauInfoComponent,listComponent,
   ]
 
 })

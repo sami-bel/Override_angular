@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {environment} from "../../environments/environment";
 
 @Component({
   selector: 'app-root',
@@ -13,6 +14,8 @@ export class AppComponent {
   onSelect(hero: Hero): void {
     this.selectedHero = hero;
     console.log(hero.name);
+    console.log(environment.adam);
+    console.log(environment.production);
   }
 
 }

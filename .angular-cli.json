@@ -7,7 +7,7 @@
     {
       "name": "app1",
       "root": "src",
-      "outDir": "dist",
+      "outDir": "dist/first",
       "assets": [
         "assets",
         "favicon.ico"
@@ -32,7 +32,7 @@
     {
       "name": "app2",
       "root": "src",
-      "outDir": "dist",
+      "outDir": "dist/second",
       "assets": [
         "assets",
         "favicon.ico"
@@ -51,7 +51,9 @@
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
+        "adam": "environments/environment.adam.ts",
         "prod": "environments/environment.prod.ts"
+
       }
     }
   ],

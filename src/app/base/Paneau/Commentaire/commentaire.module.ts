@@ -1,25 +1,21 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from "@angular/forms";
-import { PaneauModule } from './Paneau/paneau.module';
-import { AppComponent } from './app.component';
-
-
+import {CommentaireComponent} from "./commentaire.component";
 
 
 @NgModule({
-
   imports: [
-    BrowserModule,FormsModule,PaneauModule
+    BrowserModule,FormsModule,
   ],
   declarations: [
-    AppComponent
+    CommentaireComponent
   ],
 
   providers: [],
-  bootstrap: [AppComponent],
+  exports:[
+    CommentaireComponent
+  ]
 
 })
-export class AppModule {
-
-}
+export class CommentaireModule { }

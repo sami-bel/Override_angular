@@ -1,25 +1,21 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from "@angular/forms";
-import { PaneauModule } from './Paneau/paneau.module';
-import { AppComponent } from './app.component';
-
-
+import {PartageComponent} from "./partage.component";
 
 
 @NgModule({
-
   imports: [
-    BrowserModule,FormsModule,PaneauModule
+    BrowserModule,FormsModule,
   ],
   declarations: [
-    AppComponent
+    PartageComponent
   ],
 
   providers: [],
-  bootstrap: [AppComponent],
+  exports:[
+    PartageComponent
+  ]
 
 })
-export class AppModule {
-
-}
+export class PartageModule { }

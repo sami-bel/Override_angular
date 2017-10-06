@@ -1,36 +1,18 @@
-import { BrowserModule } from '@angular/platform-browser';
+
 import { NgModule } from '@angular/core';
 import { FormsModule } from "@angular/forms";
-
-
-import {listComponent} from '../import/impot.moduleOpen';
 import {PaneauModule as PaneauModuleBase} from "../../base/Paneau/paneau.module";
-import {CustomNgModule} from "../../../main2";
-//
-// @NgModule({
-//   imports: [
-//     BrowserModule,FormsModule,
-//   ],
-//   declarations: [
-//     listComponent
-//   ],
-//
-//   providers: [],
-//   exports:[
-//     listComponent
-//   ]
-//
-// })
+import {CustomNgModule} from '../../config/costumDecorator'
+import { BrowserModule } from '@angular/platform-browser';
+import { PartageModule} from "./Partage/partage.module";
+import { storyBoardModule} from './StroyBoard/storyBoard.module'
 
 @CustomNgModule({
-
-  declarations: [
-    listComponent
-  ],
+  imports: [PartageModule,storyBoardModule],
+  declarations: [],
+  providers: [],
   exports:[
-     listComponent
   ]
 
-
 })
-export class PaneauModule extends PaneauModuleBase{ }
+export class PaneauModuleTest extends PaneauModuleBase { }
